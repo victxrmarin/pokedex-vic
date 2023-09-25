@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./favicons/favicon-16x16.png" />
+
+    <script defer src="./js/script.js"></script>
+
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <main>
+      <img src="" alt="pokemon" class="pokemon_image" />
+
+      <h1 class="pokemon_data">
+        <span class="pokemon_number"></span> -
+        <span class="pokemon_name"></span>
+      </h1>
+
+      <form class="form">
+        <input
+          type="search"
+          class="input_search"
+          placeholder="Name or Number"
+          required
+        />
+      </form>
+
+      <div class="buttons">
+        <button class="button btn-prev">Prev <</button>
+        <button class="button btn-next">Next ></button>
+      </div>
+      <button class="information">i</button>
+
+      <img src="./images/pokedex.png" alt="pokedex" class="pokedex" />
+
+      <div id="fade" class="hide"></div>
+      <div id="modal" class="hide">
+        <div class="modal-header">
+          <h1>
+            <span class="modal_id"></span> -
+            <span class="modal_name"></span>
+          </h1>
+          <button id="close-modal">X</button>
+        </div>
+        <div class="modal-body">
+          <p class="height"></p>
+          <p class="weight"></p>
+          <p class="modal_type"></p>
+          <p class="xp"></p>
+          <p class="gen"></p>
+          <img src="" alt="pokemon" class="modal_image" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
